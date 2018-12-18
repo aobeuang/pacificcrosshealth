@@ -90,7 +90,7 @@ function doQuote( _frm ){
        dataType: 'json',
     }).done(function(data){
        if( !data.error ){
-       		window.location.href = '/quote-en/step3';
+       		window.location.href = '/calculator/step3';
        } else {
        	alert( data.msg );
        }
