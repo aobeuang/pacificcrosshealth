@@ -226,12 +226,12 @@ class Quote extends Public_Controller {
             // $this->email->to( $this->input->post('email', true) );
             // $this->email->bcc('onlinequote@thaivisaprotect.com'); 
             
-            $this->email->from('onlinequote@thaivisaprotect.com', 'Thai Visa Health Protect');
+            $this->email->from('onlinequote@pacificcrosshealth.com', 'Pacificcross Health');
             $this->email->to( $this->input->post('email', true) );
-            $this->email->bcc(array('onlinequote@thaivisaprotect.com', 'jonathan@thaivisa.com'));
+            $this->email->bcc(array('onlinequote@pacificcrosshealth.com', 'support@pacificcrosshealth.com'));
             // $this->email->bcc(array('Chotiwit.ks@gmail.com', 'bbird_ss@outlook.com', 'jonathan@thaivisa.com'));
 
-            $this->email->subject('Thai Visa Health Protect');
+            $this->email->subject('Pacificcross Health');
             $this->email->message( $body );
             
 
@@ -251,13 +251,13 @@ class Quote extends Public_Controller {
 
             // send mail
             $mail = $this->email->send();
-                $this->session->set_flashdata('quote_success', 'Thai Visa Health Protect');
+                $this->session->set_flashdata('quote_success', 'Pacificcross Health');
             if( !$mail ){
                 $error = true;
                 $msg = $this->email->print_debugger();
             } else {
 
-                $this->session->set_flashdata('quote_success', 'Thai Visa Health Protect');
+                $this->session->set_flashdata('quote_success', 'Pacificcross Health');
 
             }
 

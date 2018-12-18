@@ -22,7 +22,7 @@
             	<div class="row margin0">
                 	<div class="col-md-8 col-8-white census-left">
                 		<?php if(!isset($plans)): ?>
-	                	    <?php echo form_open('https://www.thaivisaprotect.com/quote-en/step2', array('id'=>'frmQuoteCensus','class'=>'form-horizontal','role'=>'form')); ?>
+	                	    <?php echo form_open('/step2', array('id'=>'frmQuoteCensus','class'=>'form-horizontal','role'=>'form')); ?>
 
 								<div class="rowFluid"> 
 								    <div class="col-xs-12 col-sm-6">
