@@ -4,7 +4,7 @@
 	<div class="row census-intro">
 		<div class="row contentRow">
 			<div class="col-md-12">
-				<h3>Thank you from Thai Visa Health Protect</h3>
+				<h3>Thank you from Pacific Cross Health</h3>
 			</div>	        
 		</div>
 	</div>
