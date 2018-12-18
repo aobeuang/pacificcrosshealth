@@ -1,0 +1,214 @@
+// @import url('https://fonts.googleapis.com/css?family=Roboto');
+@import 'compass';
+@import url('https://fonts.googleapis.com/css?family=Kanit');
+
+// Color
+$main_blue: #003da1;
+$soft_gray: #EBEBEB;
+
+// text color
+.text-main-blue{
+	color: $main_blue;
+}
+
+// modal
+.modal-content{
+	border-radius: 0;
+}
+
+#modal-contact{
+
+	.modal-header{
+		background-color: $main_blue;
+		border-bottom: 0;
+		
+		.modal-title{
+			color: #FFF;
+		}
+	}
+
+	.modal-body{
+		background: {
+	      image: url("../images/contact-woman.jpg");
+	      repeat: no-repeat;
+	      position: top left;
+	    };
+	    @include background-size(cover);
+	    padding: 0;
+	    min-height: 300px;
+	}
+}
+
+body, *{
+	// font-family: 'Roboto', sans-serif;
+	font-family: 'Kanit', sans-serif;
+}
+.quote-form--header{
+	color: $main_blue;
+	font-weight: bold;
+}
+.plan-select{
+	&--list{
+		text-align: center;
+		overflow: hidden;
+
+		li.selected .plan-select--box{
+			border-bottom: 4px solid #00ff4e;
+		}
+	}
+
+	&--box{
+		border-bottom: 4px solid #EBEBEB;
+		cursor: pointer;
+
+		// &:hover{
+		// 	border-bottom: 4px solid green;
+		// }
+
+		.plan-name{
+			font-weight: bold;
+		}
+		.plan-price{
+			font-size: 20px;
+		}
+	}
+
+}
+
+.plan-select{
+
+	&--card{
+		position: relative;
+
+		.card-header{
+			overflow: hidden;
+			padding: 10px;
+
+			.plan-name{
+				color: #000;
+				font-weight: bold;
+				margin: 0;
+			}
+			.plan-desc{
+				font-size: 14px;
+				margin-bottom: 0;
+			}
+			.plan-price{
+				color: #FFF;
+				font-weight: bold;
+				margin: 0;
+			}
+			.plan-tag{
+				position: absolute;
+			    top: 0px;
+			    right: 0px;
+			    overflow: hidden;
+			    height: 92px;
+			    width: 100px;
+
+				h3{
+					color: #000;
+				    text-align: center;
+				    background-color: #FFF;
+				    margin: 0;
+				    top: 6px;
+				    left: -8px;
+				    position: relative;
+				    width: 165px;
+				    font-size: 14px;
+				    padding: 10px 0;
+					@include single-box-shadow(0px, 2px, 5px, 0px, rgba(0, 0, 0, 0.5));
+					@include rotate(45deg);
+
+					small{
+						display: block;
+					}
+				}
+				
+			}
+		}
+
+		.card-body{
+			padding: 5px 10px;
+
+			.detail-list{
+				margin-bottom: 0;
+				li{
+					padding: 10px 0;
+
+					.icon{
+						vertical-align: top;
+						padding-top: 1em;
+						margin-right: 10px;
+					}
+					.detail{
+						width: 80%;
+
+						h5{
+							margin-top: 0;
+						    margin-bottom: 0;
+						    font-size: 14px;
+						    font-weight: bold;
+						}
+					}
+				}
+
+				li:not(:last-child){
+					border-bottom: 1px solid #CCC;
+				}
+
+				li > div{
+					display: inline-block;
+				}
+			}
+		}
+
+		.card-footer{
+
+		}
+
+		// default theme
+		&.default{
+			border: 1px solid #EBEBEB;
+			.card-header{
+				@include background-image(linear-gradient(#ebebeb, #8d8d8d));
+			}
+			.card-body{
+				background-color: #f9f9f9;
+
+				.detail-list{
+					li:not(:last-child){
+						border-bottom: 1px solid #EBEBEB;
+					}
+				}
+			}	
+		}
+
+		// reccomend theme
+		&.reccomend{
+			border: 2px solid #009d05;
+			.card-header{
+				@include background-image(linear-gradient(#1def00, #009d05));
+				padding-right: 30%;
+			}
+			.card-body{
+				background-color: #dcffda;
+			}
+		}
+
+		// best seller theme
+		&.bestseller{
+			
+		}
+
+	}
+
+}
+
+.quote-form{
+	background: #ebf0fc;
+	padding: 10px;
+	.header{
+		margin-top: 0;
+	}
+}

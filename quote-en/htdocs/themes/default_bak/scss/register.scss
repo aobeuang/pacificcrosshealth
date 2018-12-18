@@ -1,0 +1,36 @@
+.register-form {
+	background-color: #e6e6e6;
+	padding: 20px;
+}
+
+.register-form .control-label {
+	font-size: 16px;
+	font-weight: normal;
+}
+
+.register-form .form-control {
+	border-radius: 0;
+	box-shadow: none;
+	border: 1px solid #fff;
+}
+
+.register-form .control-label {
+	text-align: left;
+}
+
+.register-form .well {
+	background-color: #ddd;
+}
+
+.register-form .control-label a {
+	border-bottom: dashed 1px #888;
+}
+
+.register-form .control-label a:hover {
+	border-bottom: dashed 1px #000;
+	text-decoration: none;	
+}
+
+.register-form .input-group-addon {
+	border: 0;
+}
