@@ -75,7 +75,7 @@
 	                        
 	                             <div class="rowFluid">
 		                             <div class="col-xs-12 col-sm-6">
-		                                <?php echo form_submit(array('name'=>'submit', 'class'=>'btn btn-success btn-block mb-10 text-input'), 'Click to Get a Quote' );?>
+		                                <?php echo form_submit(array('name'=>'submit', 'class'=>'btn btn-secondary btn-block mb-10 text-input'), 'Click to Get a Quote' );?>
 	                            	</div>
 								</div>
 	                  		<?php echo form_close(); ?>
