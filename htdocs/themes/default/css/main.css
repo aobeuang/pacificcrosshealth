@@ -21,7 +21,7 @@
 
 /* line 24, ../scss/main.scss */
 .text-main-blue {
-  color: #4caf50;
+  color: #3768B4;
 }
 
 /* line 29, ../scss/main.scss */
@@ -34,7 +34,7 @@
 
 /* line 36, ../scss/main.scss */
 .modal-pchi .modal-header {
-  background-color: #4caf50;
+  background-color: #3768B4;
   border-bottom: 0;
 }
 /* line 40, ../scss/main.scss */
@@ -127,7 +127,7 @@ body, * {
 
 /* line 104, ../scss/main.scss */
 .quote-form--header {
-  color: #4caf50;
+  color: #3768B4;
   font-weight: bold;
 }
 
@@ -373,7 +373,7 @@ footer .copyright--container {
   color: #FFF;
   text-align: center;
   padding: 5px 0;
-  background-color: #4caf50;
+  background-color: #3768B4;
 }
 
 /*==========  Mobile First Method  ==========*/
