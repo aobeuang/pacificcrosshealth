@@ -9,7 +9,14 @@
             <div class="collapse navbar-collapse">
                 <ul class="nav navbar-nav"></ul>
             </div>
-            <div class="subheaderImgBig floatLeft" id="Main.CompanyLogo"><div><img src="http://www.pacificcrosshealth.com/quote/htdocs/themes/default/images/pchi_logo.png" alt="" width="150"></div></div>
+            <div class="subheaderImgBig floatLeft" id="Main.CompanyLogo">
+                <div>
+                    <a href="<?php echo base_url(); ?>">
+                      <img src="http://www.pacificcrosshealth.com/quote/htdocs/themes/default/images/pchi_logo.png" alt="" width="150">  
+                    </a>
+                    
+                </div>
+            </div>
             <div class="navbar-container">
                 <div class="subheader" role="navigation">
                     <div id="stepTabs" class="navbar-collapse">
